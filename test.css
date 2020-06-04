@@ -1,0 +1,78 @@
+header {
+  width: 400px;
+  font-family: verdana;
+  margin-right: 30px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("background.jpg");
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text";
+
+  font-family: verdana;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px #CD5C5C	;
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  margin: 30px;
+}
+
+.card_image_1 {
+  grid-area: image;
+  background: url("img1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card_image_2 {
+  grid-area: image;
+  background: url("img2.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card_image_3 {
+  grid-area: image;
+  background: url("img3.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card_text {
+  card-area: text;
+  margin: 25px;
+}
+
+.card_text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px #CD5C5C;
+}
